@@ -6,7 +6,7 @@ metadata:
 spec:
   selector:
     app: bgd-v1
-    env: green
+    env: blue
   ports:
   - protocol: TCP
     port: 8005
