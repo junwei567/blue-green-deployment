@@ -5,7 +5,7 @@ metadata:
   namespace: bgd
 spec:
   selector:
-    app: bgd-v1
+    app: bgd-v2
   ports:
   - protocol: TCP
     port: 8005 
