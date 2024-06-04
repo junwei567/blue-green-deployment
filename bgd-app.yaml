@@ -9,7 +9,7 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: application
+    path: deploy/app
     repoURL: https://github.com/junwei567/blue-green-deployment
     targetRevision: main
   syncPolicy:
