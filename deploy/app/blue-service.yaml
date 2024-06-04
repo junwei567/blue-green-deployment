@@ -5,8 +5,8 @@ metadata:
   namespace: bgd
 spec:
   selector:
-    app: bgd-v2
-    env: green
+    app: bgd-v1
+    env: blue
   ports:
   - protocol: TCP
     port: 8005
