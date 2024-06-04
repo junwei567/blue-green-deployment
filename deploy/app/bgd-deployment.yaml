@@ -4,7 +4,7 @@ metadata:
   name: blue-green-deployment
   namespace: bgd
 spec:
-  replicas: 2
+  replicas: 3
   selector:
     matchLabels:
       app: bgd-v1
