@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: greendeployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: bgd-v2
+  template:
+    metadata:
+      labels:
+        app: bgd-v2
+    spec:
+      containers:
+      - name: bgd-v2
+        image: quay.io/jwlim567/bgd/v2
+        ports:
+        - containerPort: 80
+
