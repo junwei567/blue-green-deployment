@@ -8,15 +8,17 @@ spec:
   selector:
     matchLabels:
       app: bgd-v2
+      env: green
   strategy: {}
   template:
     metadata:
       labels:
         app: bgd-v2
+        env: green
     spec:
       containers:
       - name: bgd-v2
         image: quay.io/jwlim567/bgd/v2
         ports:
-        - containerPort: 80
+        - containerPort: 8080
 

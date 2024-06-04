@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: blue-green-service
+  name: blue-service
   namespace: bgd
 spec:
   selector:
-    app: bgd-v2
+    app: bgd-v1
+    env: green
   ports:
   - protocol: TCP
-    port: 8005 
+    port: 8001
     targetPort: 8080
-  type: NodePort
