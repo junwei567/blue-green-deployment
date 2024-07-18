@@ -1,4 +1,8 @@
 # Simple Blue Green Deployment Showcase
+
+ArgoCD is a GitOps agent that pulls updated code from Git repositories and deploys it directly to our OpenShift resources. 
+It manages both infrastructure configuration and application updates in one system.
+
 ## Prerequisites
 - This example assumes you have cluster-wide admin permissions.
 - Have ArgoCD installed from the Red Hat OpenShift GitOps operator in your OpenShift cluster.
